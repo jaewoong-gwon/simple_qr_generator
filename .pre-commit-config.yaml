@@ -1,0 +1,26 @@
+repos:
+  # ==================================================
+  # Basic sanity checks (언어 무관, 매우 중요)
+  # ==================================================
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: check-json
+
+  # ==================================================
+  # ESLint (TypeScript / JavaScript)
+  # - 로직 검사
+  # - 자동 수정 ❌
+  # ==================================================
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v9.9.0
+    hooks:
+      - id: eslint
+        name: eslint (no autofix)
+        files: \.(js|jsx|ts|tsx)$
+        args:
+          - --max-warnings=0
