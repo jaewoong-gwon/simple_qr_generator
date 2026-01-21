@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "smoke-test": "tsx scripts/smoke-test.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -19,6 +21,7 @@
     "@types/react-dom": "^19",
     "eslint": "^8",
     "eslint-config-next": "15.1.4",
+    "tsx": "^4.7.0",
     "typescript": "^5"
   }
 }
