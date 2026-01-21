@@ -1,8 +1,10 @@
+---
 name: "✨ Feature"
 about: "MVP 기능 추가/변경"
 title: "[Feat] "
 labels: ["feat"]
 assignees: []
+---
 🎯 목적
 
 무엇을 위해 하는가? (한 문장)
